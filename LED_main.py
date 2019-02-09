@@ -18,6 +18,7 @@ LED_BRIGHTNESS = 150
 LED_INVERT = False
 LED_CHANNEL = 0
 SLEEPING = True
+SLEEPING_counter = 0
 
 # Define functions to change the LED colors
 def lightup(strip, color=Color(255,0,0)):
@@ -97,15 +98,20 @@ if __name__ == '__main__':
     	elif check_pconline() is True:
     		if SLEEPING is True:
     			SLEEPING = False
+    			SLEEPING_counter = 0
     			lightup(strip)
     		else:
-    			time.sleep(60)
+    			time.sleep(30)
     	else:
     		if SLEEPING is True:
     			pass
     		else:
-    			SLEEPING = True
-    			modi_sleep(strip)
+    			if SLEEPING_counter < 2:
+    				SLEEPING_counter = SLEEPING_counter + 1
+    				pass
+    			else:
+    				SLEEPING = True
+    				modi_sleep(strip)
 
 
 
