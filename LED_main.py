@@ -17,7 +17,7 @@ LED_DMA = 10
 LED_BRIGHTNESS = 150
 LED_INVERT = False
 LED_CHANNEL = 0
-
+SLEEPING = TRUE
 
 # Define functions to change the LED colors
 def lightup(strip, color=Color(255,0,0)):
@@ -29,13 +29,18 @@ def lightup(strip, color=Color(255,0,0)):
 				strip.show()
 		time.sleep(0.25)
 
-def changeinstantfullcolor(strip, color)
+def changeinstantfullcolor(strip, color):
 	#Set Color of the full stripe to color
 	for i in range(strip.numPixels()):
 		strip.setPixelColor(i, color)
 		strip.show()
 		time.sleep(0.005)
 
+def instant_shutdown(strip):
+	#Instant put the LEDs off
+	for i in range(strip.numPixels()):
+		strip.setPixelColor(i, Color(0,0,0))
+		strip.show()
 
 				
 
@@ -46,10 +51,16 @@ def modi_gaming(strip):
 
 
 def modi_wakeup(strip, color=Color(0,0,255)):
-	pass
+	lightup(strip, color)
+	time.sleep(1200)
+
 
 def modi_music(strip):
 	pass
+
+def modi_sleep(strip):
+	instant_shutdown(strip)
+	time.sleep(60)
 
 
 
@@ -73,14 +84,32 @@ if __name__ == '__main__':
 
     #startup sequenze
     lightup(strip)
+    SLEEPING = False
+    
 
     #Main Programm Loop
     while True:
+
+    	if time.strftime('%w') < 6 && time.strftime('%w') != '0':
+    		if time.strftime('%H') == '6' && time.strftime('%M') > 15 && time.strtime('%M') < 35:
+    			modi_wakeup(strip)
     	#Check if PC is running
-    	if check_pconline() is True:
-    		modi_gaming(strip)
-    	else
-    		pass
+    	else if check_pconline() is True:
+    		if SLEEPING is True:
+    			SLEEPING = False
+    			lightup(strip)
+    		else:
+    			pass
+
+    	else:
+    		if SLEEPING is True:
+    			pass
+    		else:
+    			SLEEPING = True
+    			modi_sleep(strip)
+
+
+    		
 
 
 
