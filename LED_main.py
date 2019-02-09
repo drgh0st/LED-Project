@@ -19,6 +19,7 @@ LED_INVERT = False
 LED_CHANNEL = 0
 
 
+# Define functions to change the LED colors
 def lightup(strip, color=Color(255,0,0)):
 	#LED after LED should lights up
 	for i in range(strip.numPixels()):
@@ -39,6 +40,29 @@ def changeinstantfullcolor(strip, color)
 				
 
 
+#Define differt Modi
+def modi_gaming(strip):
+	pass
+
+
+def modi_wakeup(strip, color=Color(0,0,255)):
+	pass
+
+def modi_music(strip):
+	pass
+
+
+
+
+#function to check if my gaming PC is running
+def check_pconline(pc=192.168.0.234):
+	if os.system("ping -c 1 " + pc) == 0:
+		return True
+	else:
+		return False
+
+
+
 # Main program logic follows:
 if __name__ == '__main__':
 
@@ -49,6 +73,17 @@ if __name__ == '__main__':
 
     #startup sequenze
     lightup(strip)
+
+    #Main Programm Loop
+    while True:
+    	#Check if PC is running
+    	if check_pconline() is True:
+    		modi_gaming(strip)
+    	else
+    		pass
+
+
+
 
 
   

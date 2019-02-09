@@ -5,8 +5,8 @@ It currently runs on a Raspberry Pi.
 
 ## _TODO_
 - [ ] write usage instructions
-- [ ] run on raspberry pi
-- [ ] write initial pattern
+- [X] run on raspberry pi
+- [X] write initial pattern
 - [ ] write gaming mode
 - [ ] write time circuit
 
