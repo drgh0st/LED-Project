@@ -17,7 +17,7 @@ LED_DMA = 10
 LED_BRIGHTNESS = 150
 LED_INVERT = False
 LED_CHANNEL = 0
-SLEEPING = TRUE
+SLEEPING = True
 
 # Define functions to change the LED colors
 def lightup(strip, color=Color(255,0,0)):
