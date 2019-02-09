@@ -28,6 +28,14 @@ def lightup(strip, color=Color(255,0,0)):
 				strip.show()
 		time.sleep(0.5)
 
+def changeinstantfullcolor(strip, color)
+	#Set Color of the full stripe to color
+	for i in range(strip.numPixels()):
+		strip.setPixelColor(i, color)
+		strip.show()
+		time.sleep(0.005)
+
+
 				
 
 
