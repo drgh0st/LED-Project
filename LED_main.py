@@ -99,8 +99,7 @@ if __name__ == '__main__':
     			SLEEPING = False
     			lightup(strip)
     		else:
-    			pass
-
+    			time.sleep(60)
     	else:
     		if SLEEPING is True:
     			pass
