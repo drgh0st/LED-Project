@@ -26,7 +26,9 @@ def lightup(strip, color=Color(255,0,0)):
 			if(j<=i):
 				strip.setPixelColor(j, color)
 				strip.show()
-				time.sleep(0.5)
+		time.sleep(0.5)
+
+				
 
 
 # Main program logic follows:
@@ -39,7 +41,7 @@ if __name__ == '__main__':
 
     #startup sequenze
     lightup(strip)
-    
+
 
   
  
