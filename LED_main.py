@@ -90,8 +90,8 @@ if __name__ == '__main__':
     #Main Programm Loop
     while True:
 
-    	if time.strftime('%w') < 6 && time.strftime('%w') != '0':
-    		if time.strftime('%H') == '6' && time.strftime('%M') > 15 && time.strtime('%M') < 35:
+    	if time.strftime('%w') < 6 and time.strftime('%w') != '0':
+    		if time.strftime('%H') == '6' and time.strftime('%M') > 15 and time.strtime('%M') < 35:
     			modi_wakeup(strip)
     	#Check if PC is running
     	else if check_pconline() is True:
