@@ -83,7 +83,7 @@ if __name__ == '__main__':
     strip.begin()
 
     #startup sequenze
-    lightup(strip)
+    lightup(strip, color(255,255,255))
     SLEEPING = False
 
 
