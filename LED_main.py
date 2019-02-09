@@ -10,7 +10,7 @@ import argparse
 
 
 
-LED_COUNT = 16
+LED_COUNT = 70
 LED_PIN = 18
 LED_FREQ_HZ = 800000
 LED_DMA = 10
