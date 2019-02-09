@@ -66,7 +66,7 @@ def modi_sleep(strip):
 
 
 #function to check if my gaming PC is running
-def check_pconline(pc=192.168.0.234):
+def check_pconline(pc='192.168.0.234'):
 	if os.system("ping -c 1 " + pc) == 0:
 		return True
 	else:
@@ -85,7 +85,7 @@ if __name__ == '__main__':
     #startup sequenze
     lightup(strip)
     SLEEPING = False
-    
+
 
     #Main Programm Loop
     while True:
