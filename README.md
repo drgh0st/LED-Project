@@ -7,8 +7,9 @@ It currently runs on a Raspberry Pi.
 - [ ] write usage instructions
 - [X] run on raspberry pi
 - [X] write initial pattern
-- [ ] write gaming mode
-- [ ] write time circuit
+- [X] write gaming mode
+- [X] write time circuit
+- [ ] other animation
 
 
 
