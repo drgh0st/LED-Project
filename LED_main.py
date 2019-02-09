@@ -94,7 +94,7 @@ if __name__ == '__main__':
     		if time.strftime('%H') == '6' and time.strftime('%M') > 15 and time.strtime('%M') < 35:
     			modi_wakeup(strip)
     	#Check if PC is running
-    	else if check_pconline() is True:
+    	elif check_pconline() is True:
     		if SLEEPING is True:
     			SLEEPING = False
     			lightup(strip)
