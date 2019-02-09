@@ -84,7 +84,7 @@ if __name__ == '__main__':
 
     #startup sequenze
     lightup(strip, Color(255,255,255))
-    SLEEPING = False
+ 	modi_sleep(strip)
 
 
     #Main Programm Loop
