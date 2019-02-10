@@ -10,6 +10,8 @@ It currently runs on a Raspberry Pi.
 - [X] write gaming mode
 - [X] write time circuit
 - [ ] other animation
+- [ ] remote Controll
+
 
 
 
