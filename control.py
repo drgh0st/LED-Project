@@ -1,6 +1,5 @@
 import numpy as np
 from optparse import OptionParser
-from helper import assist_functions as af
 import os
 
 
