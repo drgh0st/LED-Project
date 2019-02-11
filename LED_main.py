@@ -134,7 +134,7 @@ if __name__ == '__main__':
 
 #Main Programm Loop
     while True:
-        if check_config_change() == True:
+        if check_config_change(config[-1]) == True:
             # Config changed since last check
             new_config = read_config_file()
             if new_config[0] ==  0:
