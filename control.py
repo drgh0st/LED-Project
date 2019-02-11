@@ -109,7 +109,7 @@ def write_config_file(config):
 
 def read_config_file():
     power, auto, color, mode, show, intens, version = np.genfromtxt('config.txt', dtype='str')
-    return power, auto, color, mode, show, intens, version
+    return np.array([power, auto, color, mode, show, intens, version])
 
 
 
@@ -123,7 +123,7 @@ if __name__ == '__main__':
     
     operation = options.operation
 
-    config = np.array([read_config_file()])
+    config = read_config_file()
 
     if operation == 'lsn':
         led_stripes_on(config)
