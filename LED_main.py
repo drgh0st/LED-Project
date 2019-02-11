@@ -211,9 +211,9 @@ if __name__ == '__main__':
     					else:
     						#Led are on
     						pass
-    				elif time.strftime('%w') < 6 and time.strftime('%w') != '0':
+    				elif time.strftime('%w') < '6' and time.strftime('%w') != '0':
     					#Its between Mon-Fr
-    					if time.strftime('%H') == '6' and time.strftime('%M') > 15 and time.strtime('%M') < 35:
+    					if time.strftime('%H') == '6' and time.strftime('%M') > '15' and time.strtime('%M') < '35':
     					#Its between 6:15 and 6:35
     						modi_wakeup(strip)
     					else:
