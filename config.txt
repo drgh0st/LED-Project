@@ -1,3 +1,3 @@
 # Config file for LED controll
-#Power ON(1)/OFF(0); Automatic ON(1)/OFF(0); COLOR(TEXT); MODE(GAMING/MUSIC); SHOW(Idle, Wave); Intensenty(0-255)
-1 1 RED GAMING Idle 255
+#Power ON(1)/OFF(0); Automatic ON(1)/OFF(0); COLOR(TEXT); MODE(GAMING/MUSIC); SHOW(Idle, Wave); Intensenty(0-255); Version
+1 1 RED GAMING IDLE 255 1
