@@ -52,7 +52,7 @@ def led_mode_music(config):
         write_config_file(config)
 
 def led_mode_custom(config):
-       if config[3] == 'CUSTOM':
+    if config[3] == 'CUSTOM':
         pass
     else:
         config[-1] = str(int(config[-1]) + 1)
@@ -74,7 +74,7 @@ def led_color_red(config):
         write_config_file(config)
 
 def led_color_green(config):
-       if config[2] == 'GREEN':
+    if config[2] == 'GREEN':
         pass
     else:
         config[-1] = str(int(config[-1]) + 1)
@@ -82,7 +82,7 @@ def led_color_green(config):
         write_config_file(config)
 
 def led_color_blue(config):
-       if config[2] == 'BLUE':
+    if config[2] == 'BLUE':
         pass
     else:
         config[-1] = str(int(config[-1]) + 1)
