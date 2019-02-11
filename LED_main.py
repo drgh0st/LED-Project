@@ -196,9 +196,9 @@ if __name__ == '__main__':
 
         else:
              #Config didn't changed since last check
-             if config[0] == 1:
+             if config[0] == '1':
                 #Power on
-                if config[1] == 1:
+                if config[1] == '1':
                     #Automatic on
                     if check_pconline() == True:
                         #Pc is online
