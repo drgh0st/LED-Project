@@ -143,7 +143,7 @@ if __name__ == '__main__':
     elif operation == 'lbu':
         led_bright_up(config)
     elif operation == 'lbd':
-        led_bright_down(config):
+        led_bright_down(config)
     elif operation == 'lcr':
         led_color_red(config)
     elif operation == 'lcg':
