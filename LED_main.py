@@ -207,7 +207,6 @@ if __name__ == '__main__':
     						SLEEPING = False
     						SLEEPING_counter = 0
     						lightup(strip,color_table(config[2]))
-
     					else:
     						#Led are on
     						pass
