@@ -209,10 +209,7 @@ if __name__ == '__main__':
                     elif time.strftime('%w') < '6' and time.strftime('%w') != '0' and time.strftime('%H') == '6' and time.strftime('%M') > '15' and time.strtime('%M') < '35':
                         #Its between Mon-Fr
                         #Its between 6:15 and 6:35
-                            modi_wakeup(strip)
-                        else:
-                        #No morning Lightup
-                            pass
+                        modi_wakeup(strip)
                     else:
                         #no Automatic condition fullfilled
                         if SLEEPING is True:
