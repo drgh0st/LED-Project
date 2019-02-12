@@ -105,10 +105,10 @@ def led_pattern_wave(config):
         write_config_file(config)
 
 def write_config_file(config):
-    np.savetxt('/$home/LED-Project/config.txt', config[None], delimiter=' ', header='# Config file for LED controll', comments='#Power ON(1)/OFF(0); Automatic ON(1)/OFF(0); COLOR(TEXT); MODE(GAMING/MUSIC); SHOW(Idle, Wave); Intensenty(0-255); Version', fmt='%s')
+    np.savetxt('/home/pi/LED-Project/config.txt', config[None], delimiter=' ', header='# Config file for LED controll', comments='#Power ON(1)/OFF(0); Automatic ON(1)/OFF(0); COLOR(TEXT); MODE(GAMING/MUSIC); SHOW(Idle, Wave); Intensenty(0-255); Version', fmt='%s')
 
 def read_config_file():
-    power, auto, color, mode, show, intens, version = np.genfromtxt('/$home/LED-Project/config.txt', dtype='str')
+    power, auto, color, mode, show, intens, version = np.genfromtxt('/home/pi/LED-Project/config.txt', dtype='str')
     return np.array([power, auto, color, mode, show, intens, version])
 
 

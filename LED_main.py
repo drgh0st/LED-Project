@@ -45,7 +45,7 @@ def instant_shutdown(strip):
         strip.show()
 
 def read_config_file():
-    power, auto, color, mode, show, intens, version = np.genfromtxt('/$home/LED-Project/config.txt', dtype='str')
+    power, auto, color, mode, show, intens, version = np.genfromtxt('/home/pi/LED-Project/config.txt', dtype='str')
     return np.array([power, auto, color, mode, show, intens, version])
             
 def check_config_change(lastversion):
