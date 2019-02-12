@@ -88,6 +88,54 @@ def led_color_blue(config):
         config[2] = 'BLUE' 
         write_config_file(config)
 
+def led_color_pink(config):
+    if config[2] == 'PINK':
+        pass
+    else:
+        config[-1] = str(int(config[-1]) + 1)
+        config[2] = 'PINK' 
+        write_config_file(config)
+
+def led_color_teal(config):
+    if config[2] == 'TEAL':
+        pass
+    else:
+        config[-1] = str(int(config[-1]) + 1)
+        config[2] = 'TEAL' 
+        write_config_file(config)
+
+def led_color_orange(config):
+    if config[2] == 'ORANGE':
+        pass
+    else:
+        config[-1] = str(int(config[-1]) + 1)
+        config[2] = 'ORANGE' 
+        write_config_file(config)
+
+def led_color_purple(config):
+    if config[2] == 'PURPLE':
+        pass
+    else:
+        config[-1] = str(int(config[-1]) + 1)
+        config[2] = 'PURPLE' 
+        write_config_file(config)
+
+def led_color_yellow(config):
+    if config[2] == 'YELLOW':
+        pass
+    else:
+        config[-1] = str(int(config[-1]) + 1)
+        config[2] = 'YELLOW' 
+        write_config_file(config)
+
+def led_color_grey(config):
+    if config[2] == 'GREY':
+        pass
+    else:
+        config[-1] = str(int(config[-1]) + 1)
+        config[2] = 'GREY' 
+        write_config_file(config)
+
 def led_pattern_idle(config):
     if config[4] == 'IDLE':
         pass
@@ -149,6 +197,18 @@ if __name__ == '__main__':
         led_color_green(config)
     elif operation == 'lcb':
         led_color_blue(config)
+    elif operation == 'lcp':
+        led_color_pink(config)
+    elif operation == 'lct':
+        led_color_teal(config)
+    elif operation == 'lco':
+        led_color_orange(config)
+    elif operation == 'lcu':
+        led_color_purple(config)
+    elif operation == 'lcy':
+        led_color_yellow(config)
+    elif operation == 'lce':
+        led_color_grey(config)
     elif operation == 'lpi':
         led_pattern_idle(config)
     elif operation == 'lpw':

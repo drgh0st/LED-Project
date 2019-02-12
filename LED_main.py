@@ -80,6 +80,18 @@ def color_table(color):
         return Color(0,255,0)
     elif color == 'BLUE':
         return Color(0,0,255)
+    elif color == 'PINK':
+        return Color(0,255,255)
+    elif color == 'TEAL':
+        return Color(224,64,208)
+    elif color == 'ORANGE':
+        return Color(140,255,0)
+    elif color == 'PURPLE':
+        return Color(50,153,204)
+    elif color == 'YELLOW':
+        return Color(255,255,0)
+    elif color == 'GREY':
+        return Color(127,127,127)
     else:
         return Color(255,255,255)
 
