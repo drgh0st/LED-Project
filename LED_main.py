@@ -190,13 +190,9 @@ if __name__ == '__main__':
                     #Intens changed
                     config[5] = new_config[5]
                     config[-1] = new_config[-1]
-                    
-
-
-
         else:
              #Config didn't changed since last check
-             if config[0] == '1':
+            if config[0] == '1':
                 #Power on
                 if config[1] == '1':
                     #Automatic on
@@ -231,9 +227,8 @@ if __name__ == '__main__':
                             else:
                                 #More than 6 Sleeping Loops
                                 SLEEPING = True
-                                modi_sleep(strip)           
-
-             else:
+                                modi_sleep(strip)
+            else:
                 #Power off
                 pass
         time.sleep(1)
