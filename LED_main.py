@@ -212,6 +212,7 @@ if __name__ == '__main__':
                             else:
                                 #More than 5 Sleeping Loops
                                 SLEEPING = True
+                                SLEEPING_counter = 0
                                 modi_sleep(strip)
             else:
                 #Power off
