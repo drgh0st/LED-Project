@@ -119,31 +119,7 @@ if __name__ == '__main__':
     modi_sleep(strip)
 
 
-    # Old Main Programm Loop
-    #while True:
-    #
-    #   if time.strftime('%w') < 6 and time.strftime('%w') != '0':
-    #       if time.strftime('%H') == '6' and time.strftime('%M') > 15 and time.strtime('%M') < 35:
-    #           modi_wakeup(strip)
-    #   #Check if PC is running
-    #   elif check_pconline() is True:
-    #       if SLEEPING is True:
-    #           SLEEPING = False
-    #           SLEEPING_counter = 0
-    #           lightup(strip)
-    #       else:
-    #           time.sleep(30)
-    #   else:
-    #       if SLEEPING is True:
-    #           pass
-    #       else:
-    #           if SLEEPING_counter < 2:
-    #               SLEEPING_counter = SLEEPING_counter + 1
-    #               pass
-    #           else:
-    #               SLEEPING = True
-    #               modi_sleep(strip)
-
+  
 #Main Programm Loop
     while True:
         if check_config_change(config[-1]) == True:
@@ -218,7 +194,7 @@ if __name__ == '__main__':
                         else:
                             #Led are on
                             pass
-                    elif time.strftime('%w') < '6' and time.strftime('%w') != '0' and time.strftime('%H') == '6' and time.strftime('%M') > '15' and time.strtime('%M') < '35':
+                    elif time.strftime('%w') < '6' and time.strftime('%w') != '0' and time.strftime('%H') == '06' and time.strftime('%M') > '15' and time.strtime('%M') < '35':
                         #Its between Mon-Fr
                         #Its between 6:15 and 6:35
                         modi_wakeup(strip)
@@ -229,32 +205,15 @@ if __name__ == '__main__':
                             pass
                         else:
                             #Led are on
-                            if SLEEPING_counter < 6:
-                                #Less than 6 Sleeping Loops
+                            if SLEEPING_counter < 5:
+                                #Less than 5 Sleeping Loops
                                 SLEEPING_counter = SLEEPING_counter + 1
                                 pass
                             else:
-                                #More than 6 Sleeping Loops
+                                #More than 5 Sleeping Loops
                                 SLEEPING = True
                                 modi_sleep(strip)
             else:
                 #Power off
                 pass
-        time.sleep(1)
-
-
-
-
-
-            
-
-
-
-
-
-  
- 
-      
-
-
- 
+        time.sleep(1.5)
