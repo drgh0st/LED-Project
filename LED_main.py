@@ -40,7 +40,7 @@ def changeinstantfullcolor(strip, color):
 
 def changebrightness(strip, value):
     # set brightness of full stripe to value(0-255)
-    strip.setBrightness(value)
+    strip.setBrightness(int(value))
     strip.show()
 
 
