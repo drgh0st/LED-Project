@@ -4,7 +4,7 @@ import os
 
 
 def led_stripes_on(config): 
-    if config[0] == 0:
+    if config[0] == '0':
         config[-1] = str(int(config[-1]) + 1)
         config[0] = 1 
         write_config_file(config)
@@ -12,7 +12,7 @@ def led_stripes_on(config):
         pass
 
 def led_stripes_off(config):
-    if config[0] == 1:
+    if config[0] == '1':
         config[-1] = str(int(config[-1]) + 1)
         config[0] = 0 
         write_config_file(config)
@@ -20,14 +20,14 @@ def led_stripes_off(config):
         pass
 
 def led_automatic_on(config):
-    if config[1] == 0:
+    if config[1] == '0':
         config[-1] = str(int(config[-1]) + 1)
         config[1] = 1 
         write_config_file(config)
     else:
         pass
 def led_automatic_off(config):
-    if config[1] == 1:
+    if config[1] == '1':
         config[-1] = str(int(config[-1]) + 1)
         config[1] = 0 
         write_config_file(config)

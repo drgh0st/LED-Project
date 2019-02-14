@@ -11,7 +11,7 @@ It currently runs on a Raspberry Pi.
 - [X] write time circuit
 - [ ] other animation
 - [X] remote Controll
-- [ ] adjust brightness
+- [X] adjust brightness
 
 
 
