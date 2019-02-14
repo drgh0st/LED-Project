@@ -38,6 +38,12 @@ def changeinstantfullcolor(strip, color):
         strip.show()
         time.sleep(0.005)
 
+def changebrightness(strip, value):
+    # set brightness of full stripe to value(0-255)
+    strip.setBrightness(value)
+    strip.show()
+
+
 def instant_shutdown(strip):
     #Instant put the LEDs off
     for i in range(strip.numPixels()):
@@ -177,6 +183,7 @@ if __name__ == '__main__':
                 else:
                     #Intens changed
                     config[5] = new_config[5]
+                    changebrightness(strip, config[5])
                     config[-1] = new_config[-1]
         else:
              #Config didn't changed since last check

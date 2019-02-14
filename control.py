@@ -59,10 +59,22 @@ def led_mode_custom(config):
         write_config_file(config)
 
 def led_bright_up(config):
-    pass
+    if config[5] > '250' and config[5] < 30:
+        #if value would be out of bounds dont do it
+        pass
+    else:
+        config[-1] = str(int(config[-1]) + 1)
+        config[5] = str(int(config[5]) + 25)
+        write_config_file(config)
 
 def led_bright_down(config):
-    pass
+    if config[5] > '250' and config[5] < 30:
+        #if value would be out of bounds dont do it
+        pass
+    else:
+        config[-1] = str(int(config[-1]) + 1)
+        config[5] = str(int(config[5]) - 25)
+        write_config_file(config)
 
 def led_color_red(config):
     if config[2] == 'RED':
