@@ -194,7 +194,7 @@ if __name__ == '__main__':
                         else:
                             #Led are on
                             pass
-                    elif time.strftime('%w') < '6' and time.strftime('%w') != '0' and time.strftime('%H') == '06' and time.strftime('%M') > '15' and time.strtime('%M') < '35':
+                    elif time.strftime('%w') < '6' and time.strftime('%w') != '0' and time.strftime('%H') == '06' and time.strftime('%M') > '15' and time.strftime('%M') < '35':
                         #Its between Mon-Fr
                         #Its between 6:15 and 6:35
                         modi_wakeup(strip)
