@@ -66,9 +66,10 @@ def modi_gaming(strip):
     pass
 
 
-def modi_wakeup(strip, color=Color(0,0,255)):
+def modi_wakeup(strip, color=Color(140,255,0)):
     lightup(strip, color)
     time.sleep(1200)
+    instant_shutdown(strip)
 
 
 def modi_music(strip):
