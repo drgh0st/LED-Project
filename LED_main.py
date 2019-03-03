@@ -214,7 +214,7 @@ if __name__ == '__main__':
                         else:
                             #Led are on
                             if SLEEPING_counter < 5:
-                                #Less than 5 Sleeping Loops
+                                #Less than 15 Sleeping Loops
                                 SLEEPING_counter = SLEEPING_counter + 1
                                 pass
                             else:
