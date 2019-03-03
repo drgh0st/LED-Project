@@ -201,6 +201,7 @@ if __name__ == '__main__':
                             lightup(strip,color_table(config[2]))
                         else:
                             #Led are on
+                            SLEEPING_counter = 0
                             pass
                     elif time.strftime('%w') < '6' and time.strftime('%w') != '0' and time.strftime('%H') == '06' and time.strftime('%M') > '15' and time.strftime('%M') < '35':
                         #Its between Mon-Fr
